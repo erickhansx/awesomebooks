@@ -1,3 +1,14 @@
 body {
   background-color: rgb(208, 212, 212);
 }
+
+.addBookForm {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 10px;
+}
+
+.booksDiv {
+  margin-bottom: 10px;
+}
