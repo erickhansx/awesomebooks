@@ -1,5 +1,5 @@
-body {
-  background-color: rgb(208, 212, 212);
+.awesome-books h1 {
+  text-align: center;
 }
 
 .addBookForm {
@@ -7,6 +7,8 @@ body {
   flex-direction: column;
   width: 250px;
   gap: 10px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .booksDiv {
