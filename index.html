@@ -9,9 +9,20 @@
   </head>
   <body>
     <section class="awesome-books">
-      <h1>Awesome Books</h1>
+      <nav class="awesome-books__nav">
+        <h1>Awesome Books</h1>
+        <ul class="awesome-books__nav-list">
+          <li class="awesome-books__nav-item">
+            <a href="#" class="awesome-books__nav-link nav__link--1">List</a>
+          </li>
+          <li class="awesome-books__nav-item">
+            <a href="#" class="awesome-books__nav-link nav__link--2">Add new</a>
+          </li>
+          <li class="awesome-books__nav-item">
+            <a href="#" class="awesome-books__nav-link">Contact</a>
+          </li>
+      </nav>
       <div class="booksDiv"></div>
-      <hr class="hr--list" />
       <form class="addBookForm">
         <h1 class="addBookForm__h1">Add a new book</h1>
         <input type="text" name="title" id="title" required />
@@ -19,6 +30,9 @@
         <button type="submit" class="add-btn">Add</button>
       </form>
     </section>
+    <footer class="copyright">
+      <p>Awesome Books &copy; 2021</p>
+    </footer>
     <script type="module" src="index.js"></script>
   </body>
 </html>
