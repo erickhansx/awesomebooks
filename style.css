@@ -1,5 +1,5 @@
-body {
-  background-color: rgb(208, 212, 212);
+.awesome-books h1 {
+  text-align: center;
 }
 
 .addBookForm {
@@ -7,8 +7,38 @@ body {
   flex-direction: column;
   width: 250px;
   gap: 10px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .booksDiv {
   margin-bottom: 10px;
+}
+
+.booksDiv div:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.addBookForm__h1 {
+  margin: 0;
+}
+
+.hr--list {
+  width: 25%;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.add-btn {
+  width: 60px;
+  align-self: flex-end;
 }
