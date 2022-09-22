@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Todo List
+# Awesome Books
 
-> This project was created with the intention of storing To-do activities in a list and having the capability of adding and removing items to the list and also preserving them in localStorage.
+> This project was created with the intention of storing books in a list and having the capability of adding and removing items to the list and also preserving them in localStorage.
 
 ## Built With
 
