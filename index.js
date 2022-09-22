@@ -1,10 +1,14 @@
 import Del from './DelClass.js';
 import Book from './BookClass.js';
+import Page from './PageClass.js';
 
 const inputTitle = document.querySelector('#title');
 const inputAuthor = document.querySelector('#author');
 const addBtn = document.querySelector('.add-btn');
 const booksDiv = document.querySelector('.booksDiv');
+const listLink = document.querySelector('.nav__link--1');
+const addBookLink = document.querySelector('.nav__link--2');
+const contactPageLink = document.querySelector('.nav__link--3');
 
 let books = [];
 
@@ -25,6 +29,7 @@ class UI {
 
   static renderBooks() {
     booksDiv.innerHTML = '';
+    const books = JSON.parse(localStorage.getItem('books'));
     books.forEach((book) => {
       const bookDiv = document.createElement('div');
       bookDiv.classList.add('book');
@@ -74,4 +79,19 @@ booksDiv.addEventListener('click', (e) => {
     e.target.parentElement.remove();
     Del.removeFromStorage(e.target.parentElement);
   }
+});
+
+listLink.addEventListener('click', () => {
+  Page.allIvisible();
+  Page.bookListPage();
+});
+
+addBookLink.addEventListener('click', () => {
+  Page.allIvisible();
+  Page.bookFormPage();
+});
+
+contactPageLink.addEventListener('click', () => {
+  Page.allIvisible();
+  Page.contactPage();
 });
