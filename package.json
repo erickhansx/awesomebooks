@@ -1,7 +1,7 @@
 {
-  "name": "todolist",
+  "name": "awesomebooks",
   "version": "1.0.0",
-  "description": "Todo List",
+  "description": "Awesome Books",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
