@@ -21,8 +21,7 @@ export default class Page {
     const contactPageLi2 = document.createElement('li');
     const contactPageLi3 = document.createElement('li');
     contactPageH1.innerHTML = 'Contact Information';
-    contactPageP.innerHTML =
-      'Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!';
+    contactPageP.innerHTML = 'Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!';
     contactPageLi1.innerHTML = 'Our email: <a href="mailto: mail@mail.com">';
     contactPageLi2.innerHTML = 'Our phone number: 123-456-789';
     contactPageLi3.innerHTML = 'Our address: 123 Street, City, Country';
@@ -33,5 +32,16 @@ export default class Page {
     contactPageDiv.appendChild(contactPageP);
     contactPageDiv.appendChild(contactPageUl);
     contactPageDiv.classList.remove('invisible');
+  }
+
+  static allIvisible() {
+    const bookListH1 = document.querySelector('.bookListH1');
+    bookListH1.classList.add('invisible');
+    const bookList = document.querySelector('.booksDiv');
+    bookList.classList.add('invisible');
+    const bookForm = document.querySelector('.addBookForm');
+    bookForm.classList.add('invisible');
+    const contactPageDiv = document.querySelector('.contactPage');
+    contactPageDiv.classList.add('invisible');
   }
 }
