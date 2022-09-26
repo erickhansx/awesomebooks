@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 // import { books } from '../../index.js';
 import Book from './BookClass.js';
 import { DateTime } from './luxon.js';

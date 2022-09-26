@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import Del from './src/modules/DelClass.js';
 import Page from './src/modules/PageClass.js';
 import UI from './src/modules/UIClass.js';
