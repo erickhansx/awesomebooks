@@ -6,7 +6,7 @@ const inputTitle = document.querySelector('#title');
 const inputAuthor = document.querySelector('#author');
 const booksDiv = document.querySelector('.booksDiv');
 
-const books = [];
+let books = [];
 export default class UI {
   static addBook(e) {
     e.preventDefault();
@@ -23,7 +23,7 @@ export default class UI {
 
   static renderBooks() {
     booksDiv.innerHTML = '';
-    const books = JSON.parse(localStorage.getItem('books'));
+    books = JSON.parse(localStorage.getItem('books'));
     books.forEach((book) => {
       const bookDiv = document.createElement('div');
       bookDiv.classList.add('book');
