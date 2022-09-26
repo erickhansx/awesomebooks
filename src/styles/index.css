@@ -13,7 +13,6 @@ body {
   align-items: center;
   border: 1px solid #000;
   padding: 0 10px;
-  margin-bottom: 50px;
 }
 
 .awesome-books__nav-list {
@@ -113,4 +112,12 @@ body {
   background-color: #f44336;
   color: white;
   padding: 5px;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10%;
+  margin-right: 2%;
 }
