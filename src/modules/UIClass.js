@@ -1,6 +1,6 @@
 // import { books } from '../../index.js';
 import Book from './BookClass.js';
-import { DateTime } from '../../luxon.js';
+import { DateTime } from './luxon.js';
 
 const inputTitle = document.querySelector('#title');
 const inputAuthor = document.querySelector('#author');
